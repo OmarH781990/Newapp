@@ -1,11 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.express as px
-import io
-from scipy.stats import linregress
-import plotly.graph_objects as go
-from scipy.interpolate import interp1d
 
 def calculate_tvd(data , rkb=0):
     data['TVD'] = 0.0 + rkb # Initialize TVD column
